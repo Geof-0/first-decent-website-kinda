@@ -14,7 +14,7 @@
     display: block;
     background-color: rgba(255,255,255,0.7);
     position: fixed;
-    z-index: 3;
+    z-index: 6767;
 }
 
 #add-menu-title {
@@ -49,6 +49,9 @@
 
 /* add element images and stuff */
 
+
+/* NOTEPAD */
+
 .notepad {
     width: 150px; height: 150px;
     background-color: rgb(230,230 , 0);
@@ -56,6 +59,7 @@
     border-radius: 16px;
     top: 200px;
     left: 200px;
+    z-index: 3;
 }
 
 .notepad:hover {
@@ -96,6 +100,111 @@
 
 
 
+/* settings thingy */
+
+.element-settings {
+    position: absolute;
+    bottom: 5px; right: 5px;
+    width: 20px; height: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.element-settings:hover + .element-settings-view {
+    visibility: visible;
+}
+
+.element-settings-view {
+    position: absolute;
+    bottom: -20px;
+    right: -100px;
+    width: 100px;
+    height: auto;
+    background-color: rgba(255,255,255,0.7);
+    padding: 5px;
+    border-radius: 14px;
+    visibility: hidden;
+    transition-duration: 0.1s;
+}
+.element-settings-view:hover {
+    visibility: visible;
+    cursor: default;
+}
+
+.element-settings-view-img {
+    width: 17px;
+    height: 17px;
+    margin: 5px;
+}
+
+/* individual settings */
+
+.delete-element {
+    color: red;
+    font-family: arial;
+    align-items: center;
+    display: flex;
+    border-radius: 16px;
+}
+
+.add-cell {
+    font-family: arial;
+    align-items: center;
+    display: flex;
+    border-radius: 16px;
+}
+
+
+
+
+/* SPREADSHEET */
+
+.spreadsheet {
+    background-color: white;
+    width: 300px; height: auto;
+    position: absolute;
+    top: 200px; left: 200px;
+    border-radius: 16px;
+    padding-bottom: 100px;
+}
+
+.spreadsheet-title {
+    width: 90%;
+    font-size: 24px;
+    border: 2px solid lightgrey;
+    border-radius: 16px;
+    margin-inline: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.spreadsheet-spreadsheet {
+    width: 90%;
+    border: 2px solid lightgrey;
+    margin-inline: auto;
+    border-radius: 16px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+
+.spreadsheet-spreadsheet-cell {
+    width: 180px; min-width: 180px; max-width: 180px;
+    height: 40px; min-height: 40px; max-height: 40px;
+    border: 2px solid lightgrey;
+    border-radius: 16px;
+    margin-top: 5px; margin-left: 5px;
+    text-align: center;
+    overflow: auto;
+}
+
+
+
+
+
 
 
 
@@ -111,20 +220,17 @@
     background-color: rgba(50,50,50,0.1);
     transform: scale(1.05)
 }
+
+.parent-hover-instant:hover{
+    background-color: rgba(50,50,50,0.1); 
+}
  
-
-
-
-
-/*
-for later use
-.note-element {
-
+.parent-grab{position:absolute;}
+.parent-grab:hover{
+    cursor: grab;
 }
-.note-element-title {
+.parent-grab:active{
+    cursor: grabbing;
+}
 
-}
-.note-element-content {
-    
-}
-*/
+

@@ -21,17 +21,56 @@
             <img src="images/notepad.png" class="add-element-img">
             Add Notepad
         </div>
-    </div>
-    <!-- cloneable objetcs -->
-    <div>
-        <div id="notepad-prefab" class="notepad" hidden>
-            <div class="notepad-title" contenteditable=true>Type Here</div>
-            <div class="notepad-text" contenteditable=true>Type Here</div>
+        <div id="add-spreadsheet" class="add-element parent-hover">
+            <img src="images/spreadsheet.png" class="add-element-img">
+            Add Spreadsheet
         </div>
     </div>
 
+
+
+
+
+
+    <!-- cloneable objetcs -->
+    <div id="notepad-prefab" class="notepad" hidden>
+            <div class="notepad-title" contenteditable=true>Type Here</div>
+            <div class="notepad-text" contenteditable=true>Type Here</div>
+            <img class="element-settings parent-hover" src="images/those-3-dots.png">
+            <div class="element-settings-view">
+                <div class="delete-element parent-hover-instant">
+                    <img src="images/red-trashcan.png" class="element-settings-view-img">
+                    Delete
+                </div>
+            </div>
+    </div>
+
+    <div id="spreadsheet-prefab" class="parent-grab spreadsheet" hidden>
+        <div class="spreadsheet-title" contenteditable="true">more of a list but im too lazy at this point</div>
+        <div class="spreadsheet-spreadsheet"></div>
+
+        <img class="element-settings parent-hover" src="images/those-3-dots.png">
+        <div class="element-settings-view">
+            <div class="delete-element parent-hover-instant">
+                <img src="images/red-trashcan.png" class="element-settings-view-img">
+                Delete
+            </div>
+            <div class="add-cell parent-hover-instant">
+                <img src="images/plus-sign.png" class="element-settings-view-img">
+                Add Cell
+            </div>
+        </div>
+
+        <!-- sub-prefabs -->
+        <div id="spreadsheet-cell-prefab" class="spreadsheet-spreadsheet-cell" contenteditable="true" hidden></div>
+    </div>
+
+
+
+
+
+    <!-- support lines -->
     <svg>
-        <!-- support lines -->
     </svg>
 </body>
 

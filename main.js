@@ -11,6 +11,11 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 document.getElementById('add-note').addEventListener('click', () => {
     new notepad();
+    console.log('new note')
+})
+
+document.getElementById('add-spreadsheet').addEventListener('click', () => {
+    new spreadsheet();
 })
 
 
