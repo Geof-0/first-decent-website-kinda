@@ -1,0 +1,130 @@
+#body {
+    display: flex;
+    width: 5000px; height: 5000px;
+    background-image: url('images/grid.jpeg');
+    background-size: 100%;
+    background-color: black;
+}
+
+#add-menu {
+    border: 2px solid lightgrey;
+    border-radius: 16px;
+    width: 20vh;
+    height: 50vh;
+    display: block;
+    background-color: rgba(255,255,255,0.7);
+    position: fixed;
+    z-index: 3;
+}
+
+#add-menu-title {
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: fit-content;
+    text-align: center;
+    display: block;
+    margin-inline: auto;
+    padding: 3px;
+    transition: 0.3s ease;
+}
+
+.add-element {
+    margin-inline: auto; margin-top: 7px;
+    border-radius: 16px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.add-element-img {
+    width: 20%;
+    aspect-ratio: 1/1;
+    margin: 5px;
+}
+
+
+
+
+
+/* add element images and stuff */
+
+.notepad {
+    width: 150px; height: 150px;
+    background-color: rgb(230,230 , 0);
+    position: absolute;
+    border-radius: 16px;
+    top: 200px;
+    left: 200px;
+}
+
+.notepad:hover {
+    cursor: grab;
+}
+
+.notepad:active {
+    cursor: grabbing;
+}
+
+.notepad-title {
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s ease;
+    background-color: rgb(235,235 , 0);
+    margin-inline: auto;
+    width: 80%;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+.notepad-title:hover {
+    background-color: rgba(50,50,50,0.1);
+}
+
+.notepad-text {
+    min-height: 80%;
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* global classes */
+
+.parent-hover{transition: 0.3s ease;}
+.parent-hover:hover {
+    background-color: rgba(50,50,50,0.1);
+    transform: scale(1.05)
+}
+ 
+
+
+
+
+/*
+for later use
+.note-element {
+
+}
+.note-element-title {
+
+}
+.note-element-content {
+    
+}
+*/

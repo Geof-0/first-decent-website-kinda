@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <meta chatset="UTF-8">
+    <title>dashboard</title>
+
+    <!-- link other files -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="listeners.js" defer></script>
+    <script src="elements.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="loops.js" defer></script>
+
+</head>
+<body id="body">
+    <div id="add-menu">
+        <div id="add-menu-title" class="parent-hover">
+            Add Elements
+        </div>
+        <div id="add-note" class="add-element parent-hover">
+            <img src="images/notepad.png" class="add-element-img">
+            Add Notepad
+        </div>
+    </div>
+    <!-- cloneable objetcs -->
+    <div>
+        <div id="notepad-prefab" class="notepad" hidden>
+            <div class="notepad-title" contenteditable=true>Type Here</div>
+            <div class="notepad-text" contenteditable=true>Type Here</div>
+        </div>
+    </div>
+
+    <svg>
+        <!-- support lines -->
+    </svg>
+</body>
+
+
