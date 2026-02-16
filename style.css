@@ -47,6 +47,33 @@
 
 
 
+
+
+#add-complex-menu {
+    border: 2px solid lightgrey;
+    border-radius: 16px;
+    width: 20vh;
+    height: 50vh;
+    display: block;
+    background-color: rgba(255,255,255,0.7);
+    position: fixed;
+    z-index: 6767;
+    right: 10px;
+}
+
+#add-complex-title {
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: fit-content;
+    text-align: center;
+    display: block;
+    margin-inline: auto;
+    padding: 3px;
+    transition: 0.3s ease;
+}
+
+
 /* add element images and stuff */
 
 
@@ -155,6 +182,13 @@
     border-radius: 16px;
 }
 
+.add-log {
+    font-family: arial;
+    align-items: center;
+    display: flex;
+    border-radius: 16px;
+}
+
 
 
 
@@ -167,6 +201,7 @@
     top: 200px; left: 200px;
     border-radius: 16px;
     padding-bottom: 100px;
+    border: 2px solid lightgrey;
 }
 
 .spreadsheet-title {
@@ -205,6 +240,33 @@
 
 
 
+/* DISPLAY */
+
+.display {
+    width: 300px; height: 300px;
+    background-color: white;
+    border-radius: 16px;
+    position: absolute;
+    top: 200px; left: 200px;
+    border: 2px solid lightgrey;
+    padding: 10px;
+}
+
+.display-display {
+    white-space: pre-wrap;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.display-connector {
+    right: 0px;
+    top: 50%;
+    position: absolute;
+    transform: translate(50%, -50%);
+}
+
+
 
 
 
@@ -231,6 +293,24 @@
 }
 .parent-grab:active{
     cursor: grabbing;
+}
+
+
+
+/* global classes for interactives/ complex elements */
+
+.connector {
+    width: 70px; height: 70px;
+    border-radius: 100%;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.connector-img {
+    height: 70%;
+    width: 70%;
 }
 
 
